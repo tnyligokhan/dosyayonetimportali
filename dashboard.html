@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="ThemeBucket">
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <title>Dosya Yönetim Portalı - Anasayfa</title>
+
+    <!--Core CSS -->
+    <link href="bs3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-reset.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+    <link href="js/mini-upload-form/assets/css/bucketmin.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]>
+    <script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<section id="container" >
+<!--header başlangıç-->
+<header class="header fixed-top clearfix">
+    <!--logo başlangıç-->
+    <div class="brand">
+
+        <a href="dashboard.html" class="logo">
+            <img src="" alt="">
+        </a>
+        <div class="sidebar-toggle-box">
+            <div class="fa fa-bars"></div>
+        </div>
+    </div>
+    <!--logo bitiş-->
+
+    <div class="top-nav clearfix">
+        <!--search & user info başlangıç-->
+        <ul class="nav pull-right top-menu">
+            <li>
+                <input type="text" class="form-control search" placeholder=" Arama">
+            </li>
+            <!-- user login dropdown başlangıç-->
+            <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                    <img alt="" src="images/avatar1_small.jpg">
+                    <span class="username">Gökhan Ton</span>
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu extended logout">
+                    <li><a href="index.html"><i class="fa fa-key"></i> Çıkış Yap</a></li>
+                </ul>
+            </li>
+            <!-- user login dropdown bitiş -->
+            <li>
+                <div class="toggle-right-box">
+                    <div class="fa fa-bars"></div>
+                </div>
+            </li>
+        </ul>
+        <!--search & user info bitiş-->
+    </div>
+</header>
+<!--header bitiş-->
+<aside>
+    <div id="sidebar" class="nav-collapse">
+        <!-- sidebar menu başlangıç-->            <div class="leftside-navigation">
+            <ul class="sidebar-menu" id="nav-accordion">
+            <li>
+                <a href="index.html">
+                    <i class="fa fa-dashboard"></i>
+                    <span>Dosya Yöneticisi</span>
+                </a>
+            </li>
+        </ul></div>        
+<!-- sidebar menu bitiş-->
+    </div>
+</aside>
+<!--sidebar bitiş-->
+    <!--main content başlangıç-->
+    <section id="main-content">
+        <section class="wrapper">
+        <!-- page başlangıç-->
+
+        <div class="row">
+            <div class="col-sm-12">
+                <section class="panel">
+                    <div class="panel-body">
+
+                        <ul class="breadcrumbs-alt">
+                            <li><a class="current" href="#"><i class="fa fa-home"></i> Anasayfa</a></li>
+                        </ul>
+
+                        <ul id="filters" class="media-filter">
+                                <li><a href="#" data-filter="*"> Hepsi</a></li>
+                                <li><a href="#" data-filter=".images">Fotoğraflar</a></li>
+                                <li><a href="#" data-filter=".audio">Sesler</a></li>
+                                <li><a href="#" data-filter=".video">Videolar</a></li>
+                                <li><a href="#" data-filter=".documents">Dosyalar</a></li>
+                            </ul>
+    
+                            <div class="btn-group pull-right">
+                                <button type="button" class="btn btn-white btn-sm"><i class="fa fa-check-square-o"></i> Hepsini seç</button>
+                                <a href="#yeniKlasor" data-toggle="modal" type="button" class="btn btn-white btn-sm"><i class="fa fa-folder-open"></i> Yeni Ekle</a>
+                                <button type="button" class="btn btn-white btn-sm"><i class="fa fa-trash-o"></i> Sil</button>
+                            </div>
+                            <a href="#yeniYukle" data-toggle="modal" class="btn pull-right btn-sm"><i class="fa fa-upload"></i> Yeni Dosya Yükle</a>
+    
+    
+    
+                            <div id="gallery" class="media-gal">
+                                <div class="images item " >
+                                    <a href="#myModal" data-toggle="modal">
+                                    <img src="images/gallery/image1.jpg" alt="" />
+                                        </a>
+                                    <p>img01.jpg </p>
+                                </div>
+    
+                                <div class=" audio item " >
+                                    <a href="#myModal" data-toggle="modal">
+                                    <img src="images/gallery/image2.jpg" alt="" />
+                                        </a>
+                                    <p>img02.jpg </p>
+                                </div>
+    
+                                <div class=" video item " >
+                                    <a href="#myModal" data-toggle="modal">
+                                    <img src="images/gallery/image3.jpg" alt="" />
+                                        </a>
+                                    <p>img03.jpg </p>
+                                </div>
+    
+                                <div class=" images audio item " >
+                                    <a href="#myModal" data-toggle="modal">
+                                    <img src="images/gallery/image4.jpg" alt="" />
+                                        </a>
+                                    <p>img04.jpg </p>
+                                </div>
+    
+                                <div class=" images documents item " >
+                                    <a href="#myModal" data-toggle="modal">
+                                    <img src="images/gallery/image5.jpg" alt="" />
+                                        </a>
+                                    <p>img05.jpg </p>
+                                </div>
+    
+                                <div class=" audio item " >
+                                    <a href="#myModal" data-toggle="modal">
+                                    <img src="images/gallery/image1.jpg" alt="" />
+                                        </a>
+                                    <p>img01.jpg </p>
+                                </div>
+    
+                                <div class=" documents item " >
+                                    <a href="#myModal" data-toggle="modal">
+                                    <img src="images/gallery/image2.jpg" alt="" />
+                                    </a>
+                                    <p>img02.jpg </p>
+                                </div>
+                                <div class=" video item " >
+                                    <a href="#myModal" data-toggle="modal">
+                                    <img src="images/gallery/image3.jpg" alt="" />
+                                    </a>
+                                    <p>img03.jpg </p>
+                                </div>
+    
+                                <div class=" images item " >
+                                    <a href="#myModal" data-toggle="modal">
+                                    <img src="images/gallery/image4.jpg" alt="" />
+                                    </a>
+                                    <p>img04.jpg </p>
+                                </div>
+    
+                                <div class=" documents item " >
+                                    <a href="#myModal" data-toggle="modal">
+                                        <img src="images/gallery/image5.jpg" alt="" />
+                                    </a>
+                                    <p>img05.jpg </p>
+                                </div>
+    
+                                <div class=" video item " >
+                                    <a href="#myModal" data-toggle="modal">
+                                        <img src="images/gallery/image1.jpg" alt="" />
+                                    </a>
+                                    <p>img01.jpg </p>
+                                </div>
+    
+                                <div class=" audio images item " >
+                                    <a href="#myModal" data-toggle="modal">
+                                        <img src="images/gallery/image2.jpg" alt="" />
+                                    </a>
+                                    <p>img02.jpg </p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="col-md-12 text-center clearfix">
+                                <ul class="pagination">
+                                    <li><a href="#">«</a></li>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">»</a></li>
+                                </ul>
+                            </div>
+    
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title">Düzenle</h4>
+                                        </div>
+    
+                                        <div class="modal-body row">
+    
+                                            <div class="col-md-5 img-modal">
+                                                <img src="images/gallery/image1.jpg" alt="">
+                                                <a href="#" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> Resmi Düzenle</a>
+                                                <a href="#" class="btn btn-white btn-sm"><i class="fa fa-eye"></i> Tam Boyutta Göster</a>
+    
+                                                <p class="mtop10"><strong>Dosya Adı:</strong> img01.jpg</p>
+                                                <p><strong>Dosya Tipi:</strong> jpg</p>
+                                                <p><strong>Çözünürlük:</strong> 300x200</p>
+                                                <p><strong>Yükleyen:</strong> <a href="#">Kullanıcı</a></p>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="form-group">
+                                                    <label> Adı</label>
+                                                    <input id="name" value="img01.jpg" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label> Başlık Yazısı</label>
+                                                    <input id="title" value="Rastgele Fotoğraf" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label> Açıklama</label>
+                                                    <textarea rows="2" class="form-control"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label> Link URL</label>
+                                                    <input id="link" value="images/gallery/img01.jpg" class="form-control">
+                                                </div>
+                                                <div class="pull-right">
+                                                    <button class="btn btn-danger" type="button">Sil</button>
+                                                    <button class="btn btn-primary" type="button">Değişiklikleri Kaydet</button>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- modal -->
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="yeniKlasor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title">Klasör Ekle</h4>
+                                        </div>
+    
+                                        <div class="modal-body row">
+                                            <div class="col-md-7">
+                                                <div class="form-group">
+                                                    <label> Klasör Adı</label>
+                                                    <input id="name" value="Klasör Adı" class="form-control">
+                                                </div>
+                                                <div class="pull-right">
+                                                    <button class="btn btn-primary" type="button">Ekle</button>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- modal -->
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="yeniYukle" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                <h4 class="modal-title">Düzenle</h4>
+                                            </div>
+        
+                                            <div class="modal-body row">
+                                                <div class="alert alert-success alert-block fade in">
+                                                    <button data-dismiss="alert" class="close close-sm" type="button">
+                                                        <i class="fa fa-times"></i>
+                                                    </button>
+                                                    <h4>
+                                                        <i class="icon-ok-sign"></i>
+                                                        Aşağıdaki uzantıları içeren bir dosya yükleyebilirsiniz:
+                                                    </h4>
+                                                    <p>gif, jpeg, jpg, png, txt, zip, rar, psd, flv, docx, mp3, mp4</p>
+                                                </div>
+        
+                                                <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+                                                    <div id="drop">
+                                                        Sürükle Bırak
+                        
+                                                        <a>Gözat</a>
+                                                        <input type="file" name="upl" multiple />
+                                                    </div>
+                        
+                                                    <ul>
+                                                        <!-- The file uploads will be shown here -->
+                                                    </ul>
+                        
+                                                </form>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- modal -->
+
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- page bitiş-->
+        </section>
+    </section>
+    <!--main content bitiş-->
+</section>
+
+
+
+<!--Core js-->
+<script src="js/jquery.js"></script>
+<script src="bs3/js/bootstrap.min.js"></script>
+<script class="include" type="text/javascript" src="js/jquery.dcjqaccordion.2.7.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js"></script>
+<script src="js/jquery.nicescroll.js"></script>
+
+<script src="js/jquery.isotope.js"></script>
+
+<!--Easy Pie Chart-->
+<script src="js/easypiechart/jquery.easypiechart.js"></script>
+<!--Sparkline Chart-->
+<script src="js/sparkline/jquery.sparkline.js"></script>
+<!--jQuery Flot Chart-->
+<script src="js/flot-chart/jquery.flot.js"></script>
+<script src="js/flot-chart/jquery.flot.tooltip.min.js"></script>
+<script src="js/flot-chart/jquery.flot.resize.js"></script>
+<script src="js/flot-chart/jquery.flot.pie.resize.js"></script>
+
+<script src="js/mini-upload-form/assets/js/jquery.knob.js"></script>
+
+<!-- jQuery File Upload Dependencies -->
+<script src="js/mini-upload-form/assets/js/jquery.ui.widget.js"></script>
+<script src="js/mini-upload-form/assets/js/jquery.iframe-transport.js"></script>
+<script src="js/mini-upload-form/assets/js/jquery.fileupload.js"></script>
+
+<!-- Our main JS file -->
+<script src="js/mini-upload-form/assets/js/script.js"></script>
+
+
+<!--common script init for all pages-->
+<script src="js/scripts.js"></script>
+
+<script type="text/javascript">
+    $(function() {
+        var $container = $('#gallery');
+        $container.isotope({
+            itemSelector: '.item',
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            }
+        });
+
+        // filter items when filter link is clicked
+        $('#filters a').click(function() {
+            var selector = $(this).attr('data-filter');
+            $container.isotope({filter: selector});
+            return false;
+        });
+    });
+</script>
+
+</body>
+</html>
